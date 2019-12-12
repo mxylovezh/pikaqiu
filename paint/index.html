@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>皮卡丘</title>
+</head>
+<style>
+    *{box-sizing: border-box;}
+    *{padding: 0;margin: 0;}
+    *:after, *before{box-sizing: border-box;}
+    #html2{
+        height: 40vh;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow-y: auto;
+    }
+    #html2::-webkit-scrollbar{
+        display: none;
+    }
+    .buttons{
+        position: fixed;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px 0 0;
+    }
+    .buttons button{
+        margin-top: 10px;
+        width: 50px;
+        height: 30px;
+    }
+</style>
+<body>
+<style id="html1"></style>
+<div id="html2">
+
+</div>
+<div class="buttons">
+    <button id="play">播放</button>
+    <button id="pause">暂停</button>
+    <button id="slowPlay">慢速</button>
+    <button id="normalPlay">常速</button>
+    <button id="fastPlay">快速</button>
+</div>
+<div class="skin">
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <div class="nose">
+        <div class="noseCircle"></div>
+    </div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+    <div class="mouth">
+        <div class="up">
+            <div class="lip left"></div>
+            <div class="lip right"></div>
+        </div>
+        <div class="down">
+            <div class="bigCircle">
+                <div class="smallCircle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
